@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="F817D4CD-97FA-2ABD-E84E-C725FAEDDFF5" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="SYDNEY_INVENTORY">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW SYDNEY_INVENTORY&lt;br&gt;AS &lt;br&gt;SELECT p.product_id&lt;br&gt;,      p.product_name&lt;br&gt;,      i.quantity_on_hand&lt;br&gt;FROM   inventories i&lt;br&gt;,      warehouses  w&lt;br&gt;,      products    p&lt;br&gt;WHERE  p.product_id = i.product_id&lt;br&gt;AND    i.warehouse_id = w.warehouse_id&lt;br&gt;AND    w.warehouse_name = &apos;Sydney&apos;]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_ID" id="8F7F5C20-EAC6-3A47-ED9E-1993413F8BFC">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_ID</alias>
+<dataType>NUMBER (6)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_NAME" id="988020FA-B286-4D60-5502-A950677EF58B">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_NAME</alias>
+<dataType>NVARCHAR2 (250)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="QUANTITY_ON_HAND" id="3729DA4E-EFE3-AC32-2CDD-DC7FF7F5A40C">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>QUANTITY_ON_HAND</alias>
+<dataType>NUMBER (8)</dataType>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

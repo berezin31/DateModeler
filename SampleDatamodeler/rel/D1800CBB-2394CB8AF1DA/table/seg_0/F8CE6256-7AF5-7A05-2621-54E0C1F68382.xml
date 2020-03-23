@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8CE6256-7AF5-7A05-2621-54E0C1F68382" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="PRODUCT_DESCRIPTIONS">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_ID" id="4E59E99F-D648-9529-8CE6-500B568F7244">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<associations>
+<colAssociation fkAssociation="A456E521-562E-8042-CC0E-0CB62624702A" referredColumn="0107D555-7835-9007-41C5-0C4BA65E366E"/>
+</associations>
+</Column>
+<Column name="LANGUAGE_ID" id="CF194466-16CD-81B5-D6C2-A045DE3FDBA1">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+</Column>
+<Column name="TRANSLATED_NAME" id="164ED8D9-524C-F071-6466-789E5A60AAD2">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Column>
+<Column name="TRANSLATED_DESCRIPTION" id="F4B248A6-726E-B6B2-33E6-557E3096B9E5">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87F4ADE3-DFC2-4522-0CA3-45BDCC539282" name="PRODUCT_DESCRIPTIONS_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:39 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="4E59E99F-D648-9529-8CE6-500B568F7244"/>
+<colUsage columnID="CF194466-16CD-81B5-D6C2-A045DE3FDBA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3754AD18-0C77-57FF-A8E3-0DD909D6E7C0" name="PRD_DESC_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="4E59E99F-D648-9529-8CE6-500B568F7244"/>
+<colUsage columnID="CF194466-16CD-81B5-D6C2-A045DE3FDBA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38ADA924-53BD-5B6E-1D36-27EEDB6E3B81" name="PROD_NAME_IX">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="164ED8D9-524C-F071-6466-789E5A60AAD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FD6AE99-D5E1-8E0A-3053-D8828719F038" name="PD_PRODUCT_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:39 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="4E59E99F-D648-9529-8CE6-500B568F7244"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

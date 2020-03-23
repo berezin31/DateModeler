@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="CORPORATE_CUSTOMER_TYP" directorySegmentName="seg_0" id="7CAA6A5F-EEF1-E703-79A6-71DB1429939F">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="ACCOUNT_MGR_ID" id="5D45C911-3497-C165-0FE6-765437D521C6">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+</attributes>
+</StructuredTypeProxyOraclev10g>

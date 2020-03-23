@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="ACTION_T" directorySegmentName="seg_0" id="45EAD6FF-998F-49CE-A410-F3BDB7E2EE24">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="ACTIONED_BY" id="40CE94D5-37B8-53B2-0E0C-EF32C6B49DA4">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+<Attribute name="SYS_XDBPD$" id="6FA9E7EF-AC4B-2586-347B-B8E71072A5E7">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+<Attribute name="DATE_ACTIONED" id="93EBAC6B-1CD4-DA10-3029-31C07526FFE8">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+</attributes>
+</StructuredTypeProxyOraclev10g>

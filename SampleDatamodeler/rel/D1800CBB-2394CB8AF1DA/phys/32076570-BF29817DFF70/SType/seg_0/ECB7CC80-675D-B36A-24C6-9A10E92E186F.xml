@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="COMPOSITE_CATEGORY_TYP" directorySegmentName="seg_0" id="ECB7CC80-675D-B36A-24C6-9A10E92E186F">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="SUBCATEGORY_REF_LIST" id="2DEC4B0D-BA5D-69C7-7FC8-E3A591E05A5B">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+</attributes>
+<methods itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.MethodProxyOraclev9i">
+<Method name="CATEGORY_DESCRIBE" id="2990DDB3-BA3B-DBEA-1334-464F19C2E74A">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<bodyChanged>false</bodyChanged>
+<plSQLBody>BEGIN&amp;amp;lt;br&amp;amp;gt;      RETURN &amp;apos;composite_category_typ&amp;apos;;&amp;amp;lt;br&amp;amp;gt;    END;&amp;amp;lt;br&amp;amp;gt;   </plSQLBody>
+</Method>
+</methods>
+</StructuredTypeProxyOraclev10g>

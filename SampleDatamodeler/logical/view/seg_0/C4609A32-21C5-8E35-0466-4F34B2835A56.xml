@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="C4609A32-21C5-8E35-0466-4F34B2835A56" name="OC_INVENTORIES">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>DF0114EA-9DE0-7809-1F69-C3C37A9675F3</generatorID>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<basedOnStructuredType>27519C2C-2E01-0FFC-BD98-F301218740C1</basedOnStructuredType>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW OC_INVENTORIES&lt;br&gt;  ( PRODUCT_ID,&lt;br&gt;    WAREHOUSE,&lt;br&gt;    QUANTITY_ON_HAND )&lt;br&gt; AS SELECT&lt;br&gt;    PRODUCT_ID PRODUCT_ID,&lt;br&gt;    WAREHOUSE WAREHOUSE,&lt;br&gt;    QUANTITY_ON_HAND QUANTITY_ON_HAND;]]></userDefinedSQL>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PRODUCT_ID" id="5FC3F7DF-192A-85A1-6950-F1F34008AD4A">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<structAttributeID>D778AB8F-AE42-35A0-868B-8521D3ADF9AE</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMERIC (6)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="WAREHOUSE" id="C29C3FCF-ECC0-336C-13AF-13B4155F7B87">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<structAttributeID>6CC7DA03-1C69-850F-B98F-4A45F935FE61</structAttributeID>
+<structuredType>CB3D2AF4-66C4-97A9-4D02-2F6757A9E8A0</structuredType>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>WAREHOUSE_TYP</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="QUANTITY_ON_HAND" id="0D5389B0-CD34-B3ED-A34B-D9016C609724">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<structAttributeID>49586547-C7F2-0C0F-387A-F7DB41FC8A29</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMERIC (8)</dataType>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</EntityView>

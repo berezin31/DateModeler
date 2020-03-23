@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="REJECTION_T" directorySegmentName="seg_0" id="A92A5F30-019C-622A-8A05-FB7AA8D5F9B7">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="DATE_REJECTED" id="3B98C0E2-863A-D7DF-2853-906EB8A58EE3">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+<Attribute name="REASON_REJECTED" id="53400088-7668-66EE-5D19-1DA53B6E3F7F">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+<Attribute name="SYS_XDBPD$" id="89576835-BCC3-8DF4-4465-C65274093513">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+<Attribute name="REJECTED_BY" id="ADA4BFC6-8BAA-1A9D-DED7-991ACBC943D3">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 11:55:18 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+</Attribute>
+</attributes>
+</StructuredTypeProxyOraclev10g>

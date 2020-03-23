@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CB96374-0EA4-A360-3C30-EB8415AFC2CE" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="PRODUCT_INFORMATION">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_ID" id="0107D555-7835-9007-41C5-0C4BA65E366E">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Column>
+<Column name="PRODUCT_NAME" id="862F26AB-6BE5-A3BA-D253-D9B10A37A570">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Column>
+<Column name="PRODUCT_DESCRIPTION" id="C99779CF-49EE-5CD8-B1B0-020F71DE91E3">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary language description corresponding to translated_description in&lt;br&gt;oe.product_descriptions, added to provide non-NLS text columns for OC views&lt;br&gt;to accss.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+</Column>
+<Column name="CATEGORY_ID" id="EE444035-D905-D8FA-BACF-AD052F2E861F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Low cardinality column, can be used for bitmap index.&lt;br&gt;Schema SH uses it as foreign key]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Column>
+<Column name="WEIGHT_CLASS" id="1723EF5B-8CB6-4C1C-CC4C-DBD26589E35C">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Low cardinality column, can be used for bitmap index.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Column>
+<Column name="WARRANTY_PERIOD" id="27C2FC14-995E-C622-1F5E-513F2936F81F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[INTERVAL YEAER TO MONTH column, low cardinality, can be used for bitmap&lt;br&gt;index.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT048</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Column>
+<Column name="SUPPLIER_ID" id="BA594F8C-58D5-F4FE-6929-8E9E265B4CE1">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Offers possibility of extensions outside Common Schema.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Column>
+<Column name="PRODUCT_STATUS" id="372A66FC-889A-9D5D-C4F5-B71A63770CE9">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Check constraint. Appropriate for complex rules, such as &amp;quot;All products in&lt;br&gt;status PRODUCTION must have at least one inventory entry.&amp;quot; Also appropriate&lt;br&gt;for a trigger auditing status change.]]></commentInRDBMS>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<constraintName>PRODUCT_STATUS_LOV</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 10g" definition="product_status in (&apos;orderable&apos;
+                                                  ,&apos;planned&apos;
+                                                  ,&apos;under development&apos;
+                                                  ,&apos;obsolete&apos;)
+                               "/>
+</checkConstraint>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Column>
+<Column name="LIST_PRICE" id="CCFBA05E-19A7-18F6-6619-B559DC8C140F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Column>
+<Column name="MIN_PRICE" id="2EC5FDF3-A9D6-7648-96B3-B2267B2BE388">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Column>
+<Column name="CATALOG_URL" id="B5DFC7A5-B1A6-6DC0-9E1A-65495B677511">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B9194DB-8A03-689A-9565-576735FC5B3B" name="PRODUCT_INFORMATION_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0107D555-7835-9007-41C5-0C4BA65E366E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE4C9B57-0296-542C-9407-98E756B77105" name="PROD_SUPPLIER_IX">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="BA594F8C-58D5-F4FE-6929-8E9E265B4CE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

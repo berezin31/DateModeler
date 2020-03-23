@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF" name="PRODUCTS">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>D0A2B2D7-486B-3EFA-AB9B-63FBAB6308D8</generatorID>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW PRODUCTS&lt;br&gt;AS &lt;br&gt;SELECT i.product_id&lt;br&gt;,      d.language_id&lt;br&gt;,      CASE WHEN d.language_id IS NOT NULL&lt;br&gt;            THEN d.translated_name&lt;br&gt;            ELSE TRANSLATE(i.product_name USING NCHAR_CS)&lt;br&gt;       END    AS product_name&lt;br&gt;,      i.category_id&lt;br&gt;,      CASE WHEN d.language_id IS NOT NULL&lt;br&gt;            THEN d.translated_description&lt;br&gt;            ELSE TRANSLATE(i.product_description USING NCHAR_CS)&lt;br&gt;       END    AS product_description&lt;br&gt;,      i.weight_class&lt;br&gt;,      i.warranty_period&lt;br&gt;,      i.supplier_id&lt;br&gt;,      i.product_status&lt;br&gt;,      i.list_price&lt;br&gt;,      i.min_price&lt;br&gt;,      i.catalog_url&lt;br&gt;FROM   product_information  i&lt;br&gt;,      product_descriptions d&lt;br&gt;WHERE  d.product_id  (+) = i.product_id&lt;br&gt;AND    d.language_id (+) = sys_context(&apos;USERENV&apos;,&apos;LANG&apos;)]]></userDefinedSQL>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PRODUCT_ID" id="E518D2FD-DBF9-D5F7-1163-C58A9843C9FE">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>12B26234-5CBC-C4F0-C2D4-F80A77954ED6</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_ID</alias>
+<dataType>NUMBER (6)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="LANGUAGE_ID" id="9826AB65-FBF1-E0A9-02DD-66F8834F56FA">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>9F3B9363-FC7B-412B-89C1-20D51D380DF2</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>LANGUAGE_ID</alias>
+<dataType>VARCHAR2 (3)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PRODUCT_NAME" id="F06FE85D-5C36-F5AB-D199-CAC0C5363B62">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>C170ACEF-51FD-589D-B6D6-6FB43CB42C4C</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_NAME</alias>
+<dataType>NVARCHAR2 (250)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CATEGORY_ID" id="E992365E-DA26-F19F-73F5-4CB402DD7908">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>B878DEF4-6ACE-D572-0906-12BF7C54595D</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CATEGORY_ID</alias>
+<dataType>NUMBER (2)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PRODUCT_DESCRIPTION" id="CC368FE1-DD57-98AB-2D8E-1CA6DFE56486">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>603262C5-36D9-873B-34D8-35C834D00BD4</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_DESCRIPTION</alias>
+<dataType>NVARCHAR2 (4000)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="WEIGHT_CLASS" id="853D5331-182C-71F7-3DD6-960AC6B52DD4">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>7367771B-E9FB-1EF5-E93C-F0522F9A1FB6</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>WEIGHT_CLASS</alias>
+<dataType>NUMBER (1)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="WARRANTY_PERIOD" id="061AC7B9-C863-4051-6D3A-FBBF725BA16D">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>E87B3131-852B-629C-678E-036811D10961</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>WARRANTY_PERIOD</alias>
+<dataType>INTERVAL YEAR(2) TO MONTH (5, 2)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="SUPPLIER_ID" id="5BB63AD8-8E1F-82BE-F9D7-6CD89FA639B5">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>2410C907-FD92-72B5-3F30-96E6002D49D0</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SUPPLIER_ID</alias>
+<dataType>NUMBER (6)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PRODUCT_STATUS" id="AF10433C-4567-BBC1-B233-52B3748A655F">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>87B00D9E-FDC4-4694-27D2-89E181828097</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_STATUS</alias>
+<dataType>VARCHAR2 (20)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="LIST_PRICE" id="BB38F2EF-19C0-AA10-3B4D-3FA339A756CB">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>D5BEEB2F-2EA1-9694-FF5D-1ADEFA4961A0</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>LIST_PRICE</alias>
+<dataType>NUMBER (8, 2)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="MIN_PRICE" id="52A844AB-5092-A0FD-5AA0-3048387A67F5">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>606B4D69-9715-E9A5-BC30-88FD39B0FBDE</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MIN_PRICE</alias>
+<dataType>NUMBER (8, 2)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="CATALOG_URL" id="24E61A24-DDCC-3E97-825D-1DD6FBC8BA9D">
+<createdBy>meyoung</createdBy>
+<createdTime>2011-06-16 14:41:04 UTC</createdTime>
+<generatorID>4C521BE5-A3C3-6E18-F373-78817FDAE1F9</generatorID>
+<ownerDesignName>OE_Sample</ownerDesignName>
+<engineerTo>
+<item key="D1800CBB-9A7B-6127-AF51-2394CB8AF1DA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CATALOG_URL</alias>
+<dataType>VARCHAR2 (50)</dataType>
+<reference>false</reference>
+<viewID>E8DD6F4C-0E50-254B-A611-B6C9CB4AC5FF</viewID>
+</viewElement>
+</viewElements>
+</EntityView>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="LEAF_CATEGORY_TYP" directorySegmentName="seg_0" id="935574B9-FE76-EBDB-4455-E7BA6B34213A">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<predefined>false</predefined>
+<final>true</final>
+<inheritanceRelation>745D2D1D-3C34-A5D3-131F-1D6DFF8429D6</inheritanceRelation>
+<instantiable>true</instantiable>
+<parentTypeID>474D6FCB-A77F-4356-E491-2C454AD2E444</parentTypeID>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="PRODUCT_REF_LIST" id="61DC2244-1C7A-9D31-1320-6FE8E4792093">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>5A345F43-835B-C877-03FF-E00A42F44140</type>
+</Attribute>
+</attributes>
+<methods itemClass="oracle.dbtools.crest.model.design.datatypes.Method">
+<Method name="CATEGORY_DESCRIBE" id="42D64771-D386-40E6-CA79-E00EDA2027FA">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<body><![CDATA[BEGIN&lt;br&gt;       RETURN  &apos;leaf_category_typ&apos;;&lt;br&gt;    END;&lt;br&gt;   ]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="CATEGORY_DESCRIBE" id="null">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+</methods>
+</StructuredType>

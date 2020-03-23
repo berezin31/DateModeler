@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92ECBBC6-6434-00D1-ACB1-F8349E1D6089" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="PROMOTIONS">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMO_ID" id="83ABFA02-5ADB-8F83-B5E5-92892484C5D9">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Column>
+<Column name="PROMO_NAME" id="FAF0283D-F4AA-C144-68FB-FC111964AB8D">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D888217A-44BB-1D8D-031E-981A23E606C8" name="PROMO_ID_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>SampleDatamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="83ABFA02-5ADB-8F83-B5E5-92892484C5D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
