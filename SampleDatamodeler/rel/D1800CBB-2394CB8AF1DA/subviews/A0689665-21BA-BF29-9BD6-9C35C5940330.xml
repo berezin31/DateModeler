@@ -49,7 +49,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="75084721-E07C-7C62-1A48-BE6BF9EB9992" otype="Note" vid="48F9EEBC-C70C-B0CD-F2D8-D0CD71491847">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="666" y="229" width="215" height="82"/>
+<bounds x="666" y="229" width="314" height="141"/>
 <comment>      SQL Developer Data Modeler 3.0 &amp;amp;lt;br&amp;amp;gt;   ORDER ENTRY (OE)  Relational Model&amp;amp;lt;br&amp;amp;gt;==================================&amp;amp;lt;br&amp;amp;gt;This relational model is based on the import of the OE Sample Schema.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7817B1D3-0C65-D6F7-A5AC-36C81B75B97E" otype="Table" vid="6A370109-2A7A-77C1-3EEF-2E30FC27FCD9">
