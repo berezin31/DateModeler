@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="INVENTORY_TYP" directorySegmentName="seg_0" id="27519C2C-2E01-0FFC-BD98-F301218740C1">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<predefined>false</predefined>
+<final>true</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="PRODUCT_ID" id="D778AB8F-AE42-35A0-868B-8521D3ADF9AE">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>6</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>LOGDT019</type>
+</Attribute>
+<Attribute name="WAREHOUSE" id="6CC7DA03-1C69-850F-B98F-4A45F935FE61">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>CB3D2AF4-66C4-97A9-4D02-2F6757A9E8A0</type>
+</Attribute>
+<Attribute name="QUANTITY_ON_HAND" id="49586547-C7F2-0C0F-387A-F7DB41FC8A29">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>8</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>LOGDT019</type>
+</Attribute>
+</attributes>
+</StructuredType>

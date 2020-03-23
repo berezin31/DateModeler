@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="LINEITEMS_T" directorySegmentName="seg_0" id="66DA6F65-85F7-927F-F6B2-5C5985B1915C">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="LINEITEM" id="3BFAF4DA-52F5-280F-B1EC-34200C0F1203">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+<Attribute name="SYS_XDBPD$" id="630959B3-92E8-2703-D126-E6E307059F10">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+</attributes>
+</StructuredTypeProxyOraclev10g>

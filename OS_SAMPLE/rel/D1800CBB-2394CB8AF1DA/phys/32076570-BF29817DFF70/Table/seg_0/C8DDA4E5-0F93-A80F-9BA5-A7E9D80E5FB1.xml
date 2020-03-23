@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="WAREHOUSES" directorySegmentName="seg_0" id="C8DDA4E5-0F93-A80F-9BA5-A7E9D80E5FB1">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<schemaObject>AB99E18F-10A1-579F-F11A-EFD5EB37B0D7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LOCATION_ID" id="7170B07B-1708-2A7E-830A-1CAD419C7B61">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAREHOUSE_SPEC" id="83C32836-A2B0-0DF9-DBC6-764DB8E77E2B">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAREHOUSE_ID" id="85923096-8B3A-064F-792B-E1628B055CB7">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WH_GEO_LOCATION" id="BCB16BBE-621D-724A-3738-9BE2787F91F6">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAREHOUSE_NAME" id="F42DCBC9-3DB3-7C35-EE04-A5AB47FCFD0E">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="WHS_LOCATION_IX" id="F03F0C3A-D50A-4C36-AE61-EAAE6E3EFD64">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="WAREHOUSES_PK" id="C54216B7-83BA-ED06-5AA9-42154EFE2127">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

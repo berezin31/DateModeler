@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="XDB$RAW_LIST_T" directorySegmentName="seg_0" id="0878E25C-6CFE-854E-A3E5-414CCECFC38F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<predefined>false</predefined>
+<dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+<type>DOM3000004</type>
+<isreference>false</isreference>
+</dataTypeDescr>
+<maxElement>1000</maxElement>
+<type>ARRAY</type>
+</CollectionType>

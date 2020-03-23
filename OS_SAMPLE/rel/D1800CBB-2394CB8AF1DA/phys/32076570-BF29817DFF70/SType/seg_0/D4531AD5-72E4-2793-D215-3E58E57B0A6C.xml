@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="PART_T" directorySegmentName="seg_0" id="D4531AD5-72E4-2793-D215-3E58E57B0A6C">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<attributes itemClass="oracle.dbtools.crest.model.design.storage.oracle.v9i.TypeElementProxyOraclev9i">
+<Attribute name="QUANTITY" id="54E25938-05D8-4318-5E0D-57BBCB93B1E6">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+<Attribute name="UNITPRICE" id="A2D20C5E-AC06-C1D1-A1C6-CEFC44E21414">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+<Attribute name="PART_NUMBER" id="BB05468F-E0A9-CE9D-023A-A843B7A72E0C">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+<Attribute name="SYS_XDBPD$" id="BD24735B-0735-7F83-4B3D-7172CB5B6CB4">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</Attribute>
+</attributes>
+</StructuredTypeProxyOraclev10g>

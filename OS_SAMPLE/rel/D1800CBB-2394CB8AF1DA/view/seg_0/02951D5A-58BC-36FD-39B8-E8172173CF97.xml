@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="02951D5A-58BC-36FD-39B8-E8172173CF97" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="PRODUCT_PRICES">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW PRODUCT_PRICES&lt;br&gt;AS &lt;br&gt;SELECT category_id&lt;br&gt;,      COUNT(*)        as &quot;#_OF_PRODUCTS&quot;&lt;br&gt;,      MIN(list_price) as low_price&lt;br&gt;,      MAX(list_price) as high_price&lt;br&gt;FROM   product_information&lt;br&gt;GROUP BY category_id]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="CATEGORY_ID" id="99B5C261-2C3F-2550-955F-F3222B1E5994">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>CATEGORY_ID</alias>
+<dataType>NUMBER (2)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="#_OF_PRODUCTS" id="1F50B6C0-A13B-CD34-3CA8-6737CB3AB95C">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>#_OF_PRODUCTS</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="LOW_PRICE" id="81EB008B-FD1E-3F8B-8048-C15E8649EBE8">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>LOW_PRICE</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HIGH_PRICE" id="F44AF3AC-014C-CA07-E8AC-E5AD40B2624A">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>HIGH_PRICE</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

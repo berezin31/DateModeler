@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.CollectionTypeProxyOraclev10g" name="ORDER_LIST_TYP" directorySegmentName="seg_0" id="C2D8D4FF-31A9-ED37-DF1D-8F96B1FD63D2">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</CollectionTypeProxyOraclev10g>

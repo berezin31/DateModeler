@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="59C396BF-C187-CD6C-64B9-94A7EA8B6A27" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="ACCOUNT_MANAGERS">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW ACCOUNT_MANAGERS&lt;br&gt;AS &lt;br&gt;SELECT          c.account_mgr_id                ACCT_MGR,&lt;br&gt;                cr.region_id                    REGION,&lt;br&gt;                c.cust_address.country_id       COUNTRY,&lt;br&gt;                c.cust_address.state_province   PROVINCE,&lt;br&gt;                count(*)                        NUM_CUSTOMERS&lt;br&gt;FROM            customers c, countries cr&lt;br&gt;WHERE           c.cust_address.country_id = cr.country_id&lt;br&gt;GROUP BY ROLLUP (c.account_mgr_id,&lt;br&gt;                 cr.region_id,&lt;br&gt;                 c.cust_address.country_id,&lt;br&gt;                 c.cust_address.state_province)]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ACCT_MGR" id="5A9AB430-040B-0BD6-CD6E-BD3AB43B1E95">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ACCT_MGR</alias>
+<dataType>NUMBER (6)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="REGION" id="513E9C5F-EDFC-88D4-6B2C-C174CCDC23E8">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>REGION</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COUNTRY" id="9F97E2D1-4BC3-2905-FAD7-84E50BF0D281">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COUNTRY</alias>
+<dataType>CHAR (2)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PROVINCE" id="3E6D3FB0-2DDB-3508-63EE-584D065C5002">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PROVINCE</alias>
+<dataType>VARCHAR2 (10)</dataType>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="NUM_CUSTOMERS" id="10214860-C44A-C431-5BAC-8B414D87744F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:40 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NUM_CUSTOMERS</alias>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

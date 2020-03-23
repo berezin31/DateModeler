@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A813CABD-6658-B542-73D6-7E4C1F9D5023" schemaObject="AB99E18F-10A1-579F-F11A-EFD5EB37B0D7" name="PURCHASEORDER">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Oid" id="8B115A64-E752-9EAE-9E0E-DF417BBA293E">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<oid>true</oid>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF743A0F-269C-7713-8C87-61BC071B032B" name="Oid_PK_PURCHASEORDER">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:38 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<oidKey>true</oidKey>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8B115A64-E752-9EAE-9E0E-DF417BBA293E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

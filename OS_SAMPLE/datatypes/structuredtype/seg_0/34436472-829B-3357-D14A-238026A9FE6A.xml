@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="CATALOG_TYP" directorySegmentName="seg_0" id="34436472-829B-3357-D14A-238026A9FE6A">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<predefined>false</predefined>
+<final>true</final>
+<inheritanceRelation>D694354A-FFDA-1826-556D-EB1458EE7F82</inheritanceRelation>
+<instantiable>true</instantiable>
+<parentTypeID>ECB7CC80-675D-B36A-24C6-9A10E92E186F</parentTypeID>
+<methods itemClass="oracle.dbtools.crest.model.design.datatypes.Method">
+<Method name="GETCATALOGNAME" id="D5C25503-5827-56AD-0D41-C3BA4D177B6F">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<body><![CDATA[BEGIN&lt;br&gt;    -- Return the category name from the supertype&lt;br&gt;    RETURN self.category_name;&lt;br&gt;  END;]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="GETCATALOGNAME" id="null">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+<Method name="CATEGORY_DESCRIBE" id="2B5D5006-15AE-CEE1-3AF3-41FF846D97EF">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:35 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<body><![CDATA[BEGIN&lt;br&gt;    RETURN &apos;catalog_typ&apos;;&lt;br&gt;  END;]]></body>
+<number>0</number>
+<returnValue class="oracle.dbtools.crest.model.design.datatypes.MethodParam" name="CATEGORY_DESCRIBE" id="null">
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<typeID>LOGDT024</typeID>
+</returnValue>
+</Method>
+</methods>
+</StructuredType>

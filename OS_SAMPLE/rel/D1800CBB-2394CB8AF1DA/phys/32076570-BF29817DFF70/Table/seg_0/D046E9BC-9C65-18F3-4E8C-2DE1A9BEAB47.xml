@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CATEGORIES_TAB" directorySegmentName="seg_0" id="D046E9BC-9C65-18F3-4E8C-2DE1A9BEAB47">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<schemaObject>AB99E18F-10A1-579F-F11A-EFD5EB37B0D7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Oid" id="14055247-E6D8-F383-E040-9E8CAEF4FE97">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PARENT_CATEGORY_ID" id="44C7E811-04C3-A532-F148-03D77EF88A34">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_DESCRIPTION" id="5837E653-3F6D-FF15-ED4C-885E05719362">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_NAME" id="6C5EE9CE-6F7F-C2DB-D94D-7FCB44F2A082">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CATEGORY_ID" id="AD11B6FD-3DA1-97B6-DC18-F31413C50ABF">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SYS_C005389" id="ED0F5F5C-8E75-D686-D2E8-FE55F1C8C370">
+<createdBy>User</createdBy>
+<createdTime>2020-03-23 13:16:07 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

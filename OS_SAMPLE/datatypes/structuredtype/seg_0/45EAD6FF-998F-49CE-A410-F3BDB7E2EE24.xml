@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="ACTION_T" directorySegmentName="seg_0" id="45EAD6FF-998F-49CE-A410-F3BDB7E2EE24">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>OS_SAMPLE</ownerDesignName>
+<predefined>false</predefined>
+<final>true</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="SYS_XDBPD$" id="6FA9E7EF-AC4B-2586-347B-B8E71072A5E7">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>0878E25C-6CFE-854E-A3E5-414CCECFC38F</type>
+</Attribute>
+<Attribute name="ACTIONED_BY" id="40CE94D5-37B8-53B2-0E0C-EF32C6B49DA4">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>10</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="DATE_ACTIONED" id="93EBAC6B-1CD4-DA10-3029-31C07526FFE8">
+<createdBy>Administrator</createdBy>
+<createdTime>2008-11-20 16:11:34 UTC</createdTime>
+<ownerDesignName>525_OE</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>0</size>
+<type>LOGDT007</type>
+</Attribute>
+</attributes>
+</StructuredType>
